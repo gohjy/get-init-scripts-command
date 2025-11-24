@@ -57,7 +57,7 @@ async function main() {
         div.classList.add("instruction-section");
         div.innerHTML = htmlEscapeTag`
         <h2><code>${exportUri}</code></h2>
-        <code>deno run -r jsr:@gohjy/init-scripts@${latestVersion}/${exportUri}</code>
+        <code>deno run jsr:@gohjy/init-scripts@${latestVersion}/${exportUri}</code>
         `;
         mainArea.append(div);
     }
